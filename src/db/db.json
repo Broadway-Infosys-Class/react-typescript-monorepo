@@ -57,7 +57,22 @@
       "id": 3
     },
     {
+      "first_name": "Student_44",
+      "last_name": "Customer_4",
+      "email": "customer4@mail.com",
+      "phone": "00000000004",
+      "address": "Customer_4 Adress",
+      "description": "Customer_4 Description",
       "id": 4
+    },
+    {
+      "first_name": "Broadway",
+      "last_name": "Infosys Nepal",
+      "email": "customer1@mail.com",
+      "phone": "00000000000",
+      "address": "Customer_1 Address",
+      "description": "Customer_1 description",
+      "id": 5
     }
   ]
 }
