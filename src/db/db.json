@@ -1,78 +1,20 @@
 {
-  "customers": [
+  "todos": [
     {
       "id": 1,
-      "first_name": "Customer_1",
-      "last_name": "Customer_11",
-      "email": "customer1@mail.com",
-      "phone": "00000000000",
-      "address": "Customer_1 Address",
-      "description": "Customer_1 description"
+      "category": [
+        "health",
+        "personal"
+      ],
+      "message": "Drink water every 30 minuets"
     },
     {
       "id": 2,
-      "first_name": "Customer_2",
-      "last_name": "Customer_2",
-      "email": "customer2@mail.com",
-      "phone": "00000000000",
-      "address": "Customer_2 Adress",
-      "description": "Customer_2 Description"
-    },
-    {
-      "first_name": "Aashish",
-      "last_name": "Dahal",
-      "email": "aashdahal@gmail.com",
-      "phone": "9849949608",
-      "address": "Thimi, Bhaktapur",
-      "description": "No description",
-      "id": 3
-    }
-  ],
-  "students": [
-    {
-      "id": 1,
-      "first_name": "Student_1",
-      "last_name": "Customer_11",
-      "email": "customer1@mail.com",
-      "phone": "00000000000",
-      "address": "Customer_1 Address",
-      "description": "Customer_1 description"
-    },
-    {
-      "id": 2,
-      "first_name": "Student_2",
-      "last_name": "Customer_2",
-      "email": "customer2@mail.com",
-      "phone": "00000000000",
-      "address": "Customer_2 Adress",
-      "description": "Customer_2 Description"
-    },
-    {
-      "first_name": "Aashish",
-      "last_name": "Dahal",
-      "email": "aashdahal@gmail.com",
-      "phone": "9849949608",
-      "address": "Thimi, Bhaktapur",
-      "description": "No description",
-      "id": 3
-    },
-    {
-      "first_name": "Student_44",
-      "last_name": "Customer_4",
-      "email": "customer4@mail.com",
-      "phone": "00000000004",
-      "address": "Customer_4 Adress",
-      "description": "Customer_4 Description",
-      "id": 4
-    },
-    {
-      "first_name": "Broadway",
-      "last_name": "Infosys Nepal",
-      "email": "customer1@mail.com",
-      "phone": "00000000000",
-      "address": "Customer_1 Address",
-      "description": "Customer_1 description",
-      "id": 5
+      "category": [
+        "health",
+        "personal"
+      ],
+      "message": "Drink water every 30 minuets"
     }
   ]
 }

@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Header from "./partials/Header";
 import Footer from "./partials/Footer";
 import Students from "./pages/Students";
+import AddTodo from "./pages/AddTodo";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route exact path="/contact">
           <Contact />
         </Route>
-        <Route exact path="/student" component={Students} />
+        <Route exact path="/todo/add" component={AddTodo} />
       </Switch>
       <Footer />
     </BrowserRouter>
