@@ -8,6 +8,7 @@ import Header from "./partials/Header";
 import Footer from "./partials/Footer";
 import Students from "./pages/Students";
 import AddTodo from "./pages/AddTodo";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -20,7 +21,6 @@ function App() {
         </Route>
         <Route exact path="/todo/add" component={AddTodo} />
       </Switch>
-      <Footer />
     </BrowserRouter>
   );
 }

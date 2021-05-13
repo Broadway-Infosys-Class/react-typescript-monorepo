@@ -1,4 +1,5 @@
 import React from "react";
+import { Nav, Navbar } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { useHistory } from "react-router";
 
@@ -27,35 +28,14 @@ const Header = () => {
   const history = useHistory();
 
   return (
-    <div className={classes.headerWrapper}>
-      {/* <h2 className={classes.headerText}>This is header</h2> */}
-      <ul className={classes.headerList}>
-        <li
-          className={classes.listItem}
-          onClick={() => {
-            history.push("/");
-          }}
-        >
-          Home
-        </li>
-        <li
-          className={classes.listItem}
-          onClick={() => {
-            history.push("/student");
-          }}
-        >
-          Students
-        </li>
-        <li
-          className={classes.listItem}
-          onClick={() => {
-            history.push("/contact");
-          }}
-        >
-          Contact
-        </li>
-      </ul>
-    </div>
+    <Navbar bg="primary" variant="dark">
+      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Nav className="mr-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#features">Features</Nav.Link>
+        <Nav.Link href="#pricing">Pricing</Nav.Link>
+      </Nav>
+    </Navbar>
   );
 };
 

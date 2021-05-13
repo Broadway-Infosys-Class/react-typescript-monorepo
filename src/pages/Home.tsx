@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Card } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { useHistory } from "react-router";
+import TodoCard from "../partials/TodoCard";
 
 const useStyles = createUseStyles({
   mainWrapper: {
-    height: "77vh",
+    display: "flex",
   },
 });
 
@@ -35,13 +37,8 @@ const Home = () => {
 
   return (
     <div className={classes.mainWrapper}>
-      <h1>Welcome to home page</h1>
-
-      {todos.map((todo) => (
-        <h3 key={todo.id}>
-          {" "}
-          {todo.message}---- {todo.category.toString()}
-        </h3>
+      {todos.map((todo, index) => (
+        <TodoCard key={index} todo={todo} />
       ))}
 
       <button
