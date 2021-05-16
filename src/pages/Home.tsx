@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Card } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { useHistory } from "react-router";
 import TodoCard from "../partials/TodoCard";
@@ -8,6 +8,9 @@ import TodoCard from "../partials/TodoCard";
 const useStyles = createUseStyles({
   mainWrapper: {
     display: "flex",
+    "& .card": {
+      margin: 10,
+    },
   },
 });
 
@@ -40,14 +43,16 @@ const Home = () => {
       {todos.map((todo, index) => (
         <TodoCard key={index} todo={todo} />
       ))}
-
-      <button
-        onClick={() => {
-          history.push("/todo/add");
-        }}
-      >
-        Add Todo
-      </button>
+      <Card border="success" style={{ width: "18rem" }}>
+        <Button
+          variant="success"
+          onClick={() => {
+            history.push("/todo/add");
+          }}
+        >
+          Add Todo
+        </Button>
+      </Card>
     </div>
   );
 };
