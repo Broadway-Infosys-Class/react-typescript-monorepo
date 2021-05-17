@@ -9,6 +9,7 @@ import Footer from "./partials/Footer";
 import Students from "./pages/Students";
 import AddTodo from "./pages/AddTodo";
 import "bootstrap/dist/css/bootstrap.min.css";
+import EditTodo from "./pages/EditTodo";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Contact />
         </Route>
         <Route exact path="/todo/add" component={AddTodo} />
+        <Route exact path="/todo/edit/:id" component={EditTodo} />
       </Switch>
     </BrowserRouter>
   );
