@@ -12,6 +12,14 @@ const useStyles = createUseStyles({
       margin: 10,
     },
   },
+  addButtonWrapper: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  addButton: {
+    width: "fit-content",
+  },
 });
 
 interface ITodo {
@@ -43,8 +51,13 @@ const Home = () => {
       {todos.map((todo, index) => (
         <TodoCard key={index} todo={todo} />
       ))}
-      <Card border="success" style={{ width: "18rem" }}>
+      <Card
+        className={classes.addButtonWrapper}
+        border="success"
+        style={{ width: "18rem" }}
+      >
         <Button
+          className={classes.addButton}
           variant="success"
           onClick={() => {
             history.push("/todo/add");
